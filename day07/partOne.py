@@ -11,4 +11,4 @@ def part_one(bag_list:list, looking_for:str) -> list:
             found_list.append(bag[:sep])
             found_list.extend(part_one(bag_list, bag[:sep]))
     return found_list
-print(f'\nDAY 07 Part 1:  The shiny gold bag can go in {len(set(part_one(get_input(), "shiny gold")))} bags.')
+print(f'\nPart 1:  The shiny gold bag can go in {len(set(part_one(get_input(), "shiny gold")))} bags.')
